@@ -25,10 +25,6 @@ ads = ADS.ADS1115(i2c)
 channel0 = AnalogIn(ads, ADS.P0)
 channel1 = AnalogIn(ads, ADS.P1)
 
-#device = 'pi-003'			            # Host name of the Pi
-
-
-
 # Routine to insert temperature records into the pidata.temps table:
 def insert_record( MFC1 ):
 	query = "INSERT INTO MFCs_table (MFC1) " \
@@ -72,3 +68,16 @@ except KeyboardInterrupt:
 finally:
 	print("Cleaning up...")  
 	GPIO.cleanup() # this ensures a clean exit
+
+
+#
+# This code is derived from the excellent tutorial "Visualize Your Sensor Readings from Anywhere in the World (ESP32/ESP8266 + MySQL + PHP)" by
+#  Rui Santos aka randomnerd
+
+#  Complete project details at https://randomnerdtutorials.com/visualize-esp32-esp8266-sensor-readings-from-anywhere/
+  
+#  Permission is hereby granted, free of charge, to any person obtaining a copy
+#  of this software and associated documentation files.
+  
+#  The above copyright notice and this permission notice shall be included in all
+#  copies or substantial portions of the Software.
