@@ -47,3 +47,16 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 ?>
+
+<!--
+  This code is derived from the excellent tutorial "Visualize Your Sensor Readings from Anywhere in the World (ESP32/ESP8266 + MySQL + PHP)" by
+  Rui Santos aka randomnerd
+
+  Complete project details at https://randomnerdtutorials.com/visualize-esp32-esp8266-sensor-readings-from-anywhere/
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files.
+  
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+-->
